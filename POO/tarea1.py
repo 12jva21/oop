@@ -12,5 +12,6 @@ for i in range (2,50):
             contador+=1
     if(contador==2):
         print(i)
+    contador=0
 
 
