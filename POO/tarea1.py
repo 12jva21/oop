@@ -11,7 +11,10 @@ for i in range (2,50):
         if(i%k == 0):
             contador+=1
     if(contador==2):
-        print(i)
+        print(i, "SI es primo")
+    else:
+        print(i," NO es primo")   
     contador=0
+
 
 
