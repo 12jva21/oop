@@ -20,24 +20,39 @@ getters setters para obtener y cambiar los atributos
 print("Hola! vamos a crear a sus mascotas")
 
 class perro:
-    def __init__(self,razaP,colorP):
-        self.razaP = input("Ingrese la raza de su perro: ")
-        self.colorP = input("Ingrese el color de su perro: ")
+    def __init__(self,razaP,colorP,nombreP):
+        self.razaP = razaP
+        self.colorP = colorP
+        self.nombreP = nombreP
 
     def ladrar(self):
         print(f"Su perro {self.colorP} de raza {self.razaP} esta ladrando! ")
+    
+    def feliz(self):
+        print(f"El perro")
 
 
 class gato:
-    def __init__(self,razaG,colorG):
-        self.razaG = input("Ingrese la raza de su gato: ")
-        self.colorG = input("Ingrese el color de su gato: ")
+    def __init__(self,razaG,colorG,nombreG):
+        self.razaG = razaG
+        self.colorG = colorG
+        self.nombreG = nombreG
 
     def maullar(self):
         print(f"Su gato {self.colorG} de raza {self.razaG} esta maullando! ")
 
+
+nombreP = input("Ingrese el nombre de su perro: ")
+razaP = input("Ingrese la raza de su perro: ")
+colorP = input("Ingrese el color de su perro: ")
+
 miPerro = perro()
 miPerro.ladrar()
 
+nombreG = input("Ingrese el nombre de su gato: ")
+razaG = input("Ingrese la raza de su gato: ")
+colorG = input("Ingrese el color de su gato: ")
+
 miGato = gato ()
 miGato.maullar 
+
