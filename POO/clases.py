@@ -29,14 +29,14 @@ class gato:
         self.nombreG = nombreG
 
     def maullar(self):
-        print(f"Su gato {self.colorG} de raza {self.razaG} esta maullando! ")
+        print(f"Su gato {self.nombreG} de {self.colorG} de raza {self.razaG} esta maullando! ")
 
 
 nombreP = input("Ingrese el nombre de su perro: ")
 razaP = input("Ingrese la raza de su perro: ")
 colorP = input("Ingrese el color de su perro: ")
 
-miPerro = perro()
+miPerro = perro(razaP,colorP,nombreP)
 miPerro.ladrar()
 miPerro.feliz()
 
@@ -44,8 +44,9 @@ nombreG = input("Ingrese el nombre de su gato: ")
 razaG = input("Ingrese la raza de su gato: ")
 colorG = input("Ingrese el color de su gato: ")
 
-miGato = gato ()
-miGato.maullar 
+miGato = gato(razaG,colorG,nombreG)
+miGato.maullar()
+
 
 
 
