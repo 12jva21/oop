@@ -29,7 +29,10 @@ class perro:
         print(f"Su perro {self.colorP} de raza {self.razaP} esta ladrando! ")
     
     def feliz(self):
-        print(f"El perro")
+        print(f"{self.nombreP} esta siendo acariciado y le gusta")
+        print("El perro se siente muy agradecido por su comida :) ")
+        print(f"A {self.nombreP} le gusta mucho que lo saque y juegue con el ")
+        print(f"{self.nombreP} es feliz! :D ")
 
 
 class gato:
@@ -55,4 +58,5 @@ colorG = input("Ingrese el color de su gato: ")
 
 miGato = gato ()
 miGato.maullar 
+
 
